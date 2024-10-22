@@ -1,0 +1,85 @@
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio__item {
+    background: black;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio__item:hover {
+    border-color: var(--color--primary-variant);
+    background: transparent;
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Cafe {
+    width: 100%;
+    height: 300px;
+}
+
+.Food {
+    width: 110%;
+    height: 300px;
+}
+
+.Projects {
+    width: 100%;
+    height: 300px;
+}
+
+.Titulo {
+    padding: 30px;
+    font-size: 25px;
+    margin: 1.2rem 0 2rem;
+}
+
+.formative {
+    width: 120%;
+    height: 300px;
+}
+
+.API {
+    width: 120%;
+    height: 300px;
+}
+
+/*  ==================== MEDIA QUERIES MEDIUM DEVICES ================  */
+
+@media screen and (max-width: 1024px){
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+
+}
+
+/*  ==================== MEDIA QUERIES SMALL DEVICES ================  */
+
+@media screen and (max-width: 600px){
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
